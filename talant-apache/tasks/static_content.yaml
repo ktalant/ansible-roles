@@ -1,0 +1,9 @@
+---
+- name: copy index.j2 file from files directory and replace with your variables in defaults
+  copy: 
+    src: index.j2
+    path: /var/www/html/index.html
+  notify: restart-apache
+
+  
+

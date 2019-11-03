@@ -2,4 +2,5 @@
 # tasks file for talant-apache
   - import_tasks: install_apache.yaml
   - import_tasks: install_packages.yaml
+  - import_tasks: static_content.yaml
 
