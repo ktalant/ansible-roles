@@ -1,6 +1,6 @@
 ---
 - name: install apache with necessary packages
-  hosts: local
+  hosts: localhost
   become: true
   become_method: sudo
   roles:
