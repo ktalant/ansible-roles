@@ -1,3 +1,7 @@
 ---
 - name: install apache with necessary packages
-  
+  hosts: local
+  become: true
+  become_method: sudo
+  roles:
+    - talant-apache
