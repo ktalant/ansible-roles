@@ -1,0 +1,9 @@
+---
+- name: install necessary packages
+  package:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - telnet
+    - wget
+    - elinks

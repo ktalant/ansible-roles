@@ -1,2 +1,6 @@
 ---
 # handlers file for talant-apache
+- name: restart-apache
+  systemd:
+    name: httpd
+    state: restarted

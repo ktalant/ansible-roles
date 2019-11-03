@@ -1,2 +1,6 @@
 ---
 # tasks file for talant-apache
+- tasks:
+    - import_tasks: install_apache.yaml
+    - import_tasks: install_packages.yaml
+  notify: restart-apache
