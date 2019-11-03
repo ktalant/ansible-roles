@@ -1,6 +1,6 @@
 ---
 - name: copy index.j2 file from files directory and replace with your variables in defaults
-  copy: 
+  template: 
     src: index.j2
     dest: /var/www/html/index.html
   notify: restart-apache
