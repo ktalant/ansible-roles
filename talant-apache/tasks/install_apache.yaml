@@ -10,5 +10,3 @@
     state: started
     enabled: yes
 
-- name: restart apache
-  notify: restart-apache
